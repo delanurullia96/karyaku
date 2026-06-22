@@ -1,34 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<title>Ani</title>
+<meta charset="UTF-8">
+<title>Ani - Portofolio</title>
+
+<style>
+body{
+  font-family: Arial;
+  margin:0;
+  background:#f6f3ff;
+}
+
+header{
+  text-align:center;
+  padding:20px;
+  background:#6a5acd;
+  color:white;
+}
+
+.profile{
+  text-align:center;
+  padding:20px;
+}
+
+.profile img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+}
+
+.carousel{
+  display:flex;
+  overflow-x:auto;
+  gap:15px;
+  padding:20px;
+  scroll-snap-type:x mandatory;
+}
+
+.karya{
+  min-width:250px;
+  background:white;
+  border-radius:15px;
+  padding:15px;
+  scroll-snap-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.karya img{
+  width:100%;
+  border-radius:10px;
+}
+
+.back{
+  display:block;
+  text-align:center;
+  margin:20px;
+}
+</style>
 </head>
 
 <body>
 
-<h1>Profil Ani</h1>
+<header>
+  <h1>Profil Siswa</h1>
+</header>
 
-<img src="https://via.placeholder.com/200">
+<div class="profile">
+  <img src="https://via.placeholder.com/120">
+  <h2>Ani</h2>
+</div>
 
-<h2>Karya</h2>
+<div class="carousel">
 
-<ul>
-  <li>Poster Lingkungan</li>
-  <li>Puisi Kemerdekaan</li>
-  <li>Proyek IPA</li>
-</ul>
+  <div class="karya">
+    <img src="https://via.placeholder.com/300x200">
+    <h3>Poster Hemat Energi</h3>
+    <p>Karya P5 tentang lingkungan.</p>
+  </div>
 
-<p>
-<a href="https://forms.google.com">
-Berikan Feedback
-</a>
-</p>
+  <div class="karya">
+    <img src="https://via.placeholder.com/300x200">
+    <h3>Kolase Ekosistem</h3>
+    <p>Belajar rantai makanan.</p>
+  </div>
 
-<p>
-<a href="index.html">
-Kembali
-</a>
-</p>
+  <div class="karya">
+    <img src="https://via.placeholder.com/300x200">
+    <h3>Video Presentasi</h3>
+    <p>Video diambil dari YouTube nanti.</p>
+  </div>
+
+</div>
+
+<a class="back" href="index.html">⬅ Kembali</a>
 
 </body>
 </html>
