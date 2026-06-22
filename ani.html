@@ -37,7 +37,24 @@ header{
   scroll-snap-type:x mandatory;
 }
 
+.karya
+  .carousel{
+  scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch;
+}
+
 .karya{
+  transition: transform 0.3s;
+}
+
+.karya:hover{
+  transform: scale(1.03);
+}
+
+small{
+  color:gray;
+}
+  {
   min-width:250px;
   background:white;
   border-radius:15px;
@@ -73,22 +90,27 @@ header{
 <div class="carousel">
 
   <div class="karya">
-    <img src="https://via.placeholder.com/300x200">
+    <img src="https://via.placeholder.com/400x250">
     <h3>Poster Hemat Energi</h3>
-    <p>Karya P5 tentang lingkungan.</p>
+    <p>Karya P5 tentang pentingnya menghemat listrik dan air.</p>
+    <small>👉 Geser untuk karya lain</small>
   </div>
 
   <div class="karya">
-    <img src="https://via.placeholder.com/300x200">
+    <img src="https://via.placeholder.com/400x250">
     <h3>Kolase Ekosistem</h3>
-    <p>Belajar rantai makanan.</p>
+    <p>Menunjukkan hubungan makhluk hidup dalam lingkungan.</p>
+    <small>👉 Geser untuk karya lain</small>
   </div>
 
   <div class="karya">
-    <img src="https://via.placeholder.com/300x200">
+    <img src="https://via.placeholder.com/400x250">
     <h3>Video Presentasi</h3>
-    <p>Video diambil dari YouTube nanti.</p>
+    <p>Video presentasi (akan kita ganti YouTube nanti).</p>
+    <small>👉 Geser untuk karya lain</small>
   </div>
+
+</div>
 
 </div>
 
